@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Element</title>
+    </head>
+    <body>
+        <h1>Comprehensive Html Form</h1>
+        <p>
+            Lets took a comprehensive look of html form.<br>
+            Form is basic of a web templete of<br>
+            form based application. A comprehensive study<br>
+            about it will bring good outcome<br>
+            to our fundemental web programming skill.<br>
+        </p>
+        <h3>Input Type Text</h3>
+        <form>
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name: </label><br>
+            <input type="text" id="lname" name="lname">
+        </form>
+        <h3>Input Type Radio</h3>
+        <form>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+        </form>
+        <h3>Input Type Password</h3>
+        <form>
+            <label for="username">Username</label><br>
+            <input type="text" id="username name=" username"><br>
+            <label for="pwd">Password</label><br>
+            <input type="password" id="pwd" name="pwd"><br>
+            <!--type attribute is set to password-->
+        </form>
+        <h3>Input Type Email</h3>
+        <p>Basic imput type of email</p>
+        <form>
+            <label for="email"> Enter Your Email: </label>
+            <input type="email" id="email" name="email">
+        </form>
+        <h3>Input Type Tel</h3>
+        <form>
+            <label for="phone">Enter Your Phone Number</label>
+            <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <!-validation at template--->
+        </form>
+        <h3>Input Type Number</h3>
+        <form>
+            <label for="quantity">Quantity (between 1 and 5) </label>
+            <input type="number" id="quantity" min="1" max="5">
+        </form>
+        <h3>Input Type URL</h3>
+        <form>
+            <label for="homepage">Add Your HomePage</label>
+            <input type="url" id="homepage" name="homepage">
+        </form>
+        <h3>Input Type Search</h3>
+        <form>
+            <label for="gsearch">Search Google:</label>
+            <input type="search" id="gsearch" name="gsearch">
+        </form>
+        <p>Input Type Reset and Submit</p>
+        <form action="/" method="POST">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="submit">
+            <input type="reset">
+        </form>
+        <hr>
+        <h3>Input Type CheckBox</h3>
+        <p>checkboxes let user choose one or more choice in a set of choices</p>
+        <form>
+            <input type="checkbox" id="vehicle1" name="vehicle2" value="Bike">
+            <label for="vehicle1">I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">I have a car</label>
+        </form>
+        <h3>Input Type Date</h3>
+        <p>Basic Date</p>
+        <form>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+        </form>
+        <p>Date Time</p>
+        <form>
+            <label for="birthday"> Birthday:</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        </form>
+        <p>Month</p>
+        <form>
+            <label for="bdaymonth">Birthday (month and year)</label>
+            <input type="month" id="bdaymonth" name="bdaymonth">
+        </form>
+        <h3>Input Type Range</h3>
+        <form>
+            <label for="vol">Volume (between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="0" max="50">
+        </form>
+        <h3>Input Type File</h3>
+        <form>
+            <label for="myfile">Select A File:</label>
+            <input type="file" id="myfile" name="myfile">
+        </form>
+        <hr>
+        <h3>Input Type Color</h3>
+        <form>
+            <label for="favcolor">Select yout favcolor</label>
+            <input type="color" id="favcolor" name="favcolor">
+        </form>
+
+    </body>
+</html>
