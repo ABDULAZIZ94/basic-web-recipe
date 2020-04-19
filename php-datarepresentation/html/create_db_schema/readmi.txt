@@ -1,0 +1,1 @@
+auto_create_table will produle msqyl create sql command automatically.
