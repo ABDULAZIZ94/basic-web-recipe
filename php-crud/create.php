@@ -37,10 +37,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // Check input errors before inserting in database
-    if(empty($name_err) && empty($address_err) && empty($salary_err)){
+    if(!empty($name_err) && !empty($address_err) && !empty($salary_err)){
+
+        $init_table = "CREATE TABLE IF NOT EXISTS employees {
+            name VARCHAR(255), 
+            address VARCHAR(255), 
+            salary VARCHAR(255)
+            } ";
+        $result = mysql_query($init_table, $link);
+
         // Prepare an insert statement
         $sql = "INSERT INTO employees (name, address, salary) VALUES (?, ?, ?)";
-         
+
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "sss", $param_name, $param_address, $param_salary);
@@ -57,6 +65,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 exit();
             } else{
                 echo "Something went wrong. Please try again later.";
+
             }
         }
          
